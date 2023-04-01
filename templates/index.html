@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Black"
+    />
+    <link rel="stylesheet" href="./../static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>DeepCreate.AI</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </header>
+
+    <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked />
+      <input type="radio" name="slider" id="slide2" />
+      <input type="radio" name="slider" id="slide3" />
+      <input type="radio" name="slider" id="slide4" />
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <h2>DeepCreate.ai</h2>
+                <p>
+                  Helping game developers create better experiences through
+                  Artificial Intelligence
+                </p>
+              </div>
+            </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <h2>Level Generation</h2>
+                <p>
+                  We provide AI driven level generation services for more
+                  immersive and dynamic gaming experience.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <h2>Quality Assurance Bots</h2>
+                <p>
+                  Our quality assurance bots help identify and fix issues in
+                  your game, ensuring a smooth and polished experience for
+                  players.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide_4">
+              <div class="slide-content">
+                <h2>Machine Learning for Games</h2>
+                <p>
+                  Leverage the power of machine learning to create adaptive
+                  gameplay, predictive analytics, and more for your game.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+    </div>
+
+    <main>
+      <!-- About Us -->
+      <section id="about">
+        <h1>About Us</h1>
+        <p>
+          At DeepCreate.ai, we leverage the power of cutting-edge Artificial
+          Intelligence and Large Language Models (LLMs) to create advanced level
+          generation pipelines and other services for the gaming industry. Our
+          solutions enable game developers to streamline their development
+          process, save time, and create more engaging and immersive gaming
+          experiences. By combining our expertise in AI and machine learning
+          with a deep understanding of the unique challenges faced by indie game
+          developers, we are committed to providing innovative solutions that
+          cater to their specific needs and help them stay ahead of the
+          competition.
+        </p>
+      </section>
+
+      <section id="services" class="services-container">
+        <h2>Our Services</h2>
+        <div class="services-row">
+          <div class="service">
+            <div class="service-img">
+              <img src="./images.jfif" width="" alt="loading" />
+            </div>
+            <h3>Level Generation</h3>
+            <p>
+              We provide AI-driven level generation services for a more
+              immersive and dynamic gaming experience.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-img">
+              <img src="./images.jfif" width="" alt="loading" />
+            </div>
+            <h3>Quality Assurance Bots</h3>
+            <p>
+              Our quality assurance bots help identify and fix issues in your
+              game, ensuring a smooth and polished experience for players.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-img">
+              <img src="./images.jfif" width="" alt="loading" />
+            </div>
+            <h3>Machine Learning for Games</h3>
+            <p>
+              Leverage the power of machine learning to create adaptive
+              gameplay, predictive analytics, and more for your game.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Carousel -->
+      <section id="Research">
+        <h1>Research and Services</h1>
+        <div id="carousel-wrapper">
+          <div id="menu">
+            <div id="current-option">
+              <span
+                id="current-option-text1"
+                data-previous-text=""
+                data-next-text=""
+              >
+              </span>
+              <span
+                id="current-option-text2"
+                data-previous-text=""
+                data-next-text=""
+              ></span>
+            </div>
+            <button id="previous-option"></button>
+            <button id="next-option"></button>
+          </div>
+          <div id="image"></div>
+        </div>
+      </section>
+
+      <!-- Contact Us content -->
+      <section id="contact">
+        <div class="contact-container">
+          <div class="office-directions">
+            <h2>Office Directions</h2>
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.8522341474854!2d27.99288311555893!3d-26.266458772887546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9508e9d789af33%3A0xceecccf3fcab06a5!2s12%20Ethna%20St%2C%20Ridgeway%2C%20Johannesburg%20South%2C%202091!5e0!3m2!1sen!2sza!4v1679118756900!5m2!1sen!2sza"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-form">
+            <h2 style="text-align: center">Contact Us</h2>
+            <!-- <form action="{{ url_for('submit_contact') }}" method="post"> -->
+            <form method="post">
+              <div class="contact-fields">
+                <!-- <label for="name">Name:</label> -->
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  id="name"
+                  name="surname"
+                  placeholder="Surname"
+                  required
+                />
+              </div>
+              <div class="contact-fields">
+                <!-- <label for="email">Email:</label> -->
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  id="email"
+                  name="Subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div>
+                <!-- <label for="message">Message:</label> -->
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" id="myBtn">Submit</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Your Request is sended. We will contact you soon</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="disclaimer">
+        Disclaimer: This website is built using GPT-4 in ChatGPT by OpenAI.
+      </div>
+      <div class="copyright">
+        &copy; 2023 DeepCreate.AI. All rights reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/js/main.js"></script>
+    <script>
+      // Initialize Swiper
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      function handleClick() {
+        // e.preventDefault();
+        alert("Your Message is recieved");
+      }
+
+      // second slider js
+      const text1_options = [
+        "Research 1",
+        "Research 2",
+        "Research 3",
+        "Research 4",
+      ];
+      const text2_options = [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem suscipit quae facilis quas repellat, perspiciatis, sit praesentium illum, magni vel iure molestiae quaerat tempore ipsum quam ut. Minima, rerum et.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem suscipit quae facilis quas repellat, perspiciatis, sit praesentium illum, magni vel iure molestiae quaerat tempore ipsum quam ut. Minima, rerum ",
+        "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem suscipit quae facilis quas repellat, perspiciatis, sit praesentium illum, magni vel iure molestiae quaerat tempore ipsum quam ut. Minima, rerum ",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem suscipit quae facilis quas repellat, perspiciatis, sit praesentium illum, magni vel iure molestiae quaerat tempore ipsum quam ut. Minima, rerum et.",
+      ];
+      const color_options = ["#EBB9D2", "#FE9968", "#7FE0EB", "#6CE5B1"];
+      const image_options = [
+        "https://images.unsplash.com/photo-1524721696987-b9527df9e512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80",
+        "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+        "https://images.unsplash.com/photo-1506073828772-2f85239b6d2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80",
+        "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      ];
+      var i = 0;
+      const currentOptionText1 = document.getElementById(
+        "current-option-text1"
+      );
+      const currentOptionText2 = document.getElementById(
+        "current-option-text2"
+      );
+      const currentOptionImage = document.getElementById("image");
+      const carousel = document.getElementById("carousel-wrapper");
+      const mainMenu = document.getElementById("menu");
+      const optionPrevious = document.getElementById("previous-option");
+      const optionNext = document.getElementById("next-option");
+
+      currentOptionText1.innerText = text1_options[i];
+      currentOptionText2.innerText = text2_options[i];
+      currentOptionImage.style.backgroundImage =
+        "url(" + image_options[i] + ")";
+      mainMenu.style.background = color_options[i];
+
+      optionNext.onclick = function () {
+        i = i + 1;
+        i = i % text1_options.length;
+        currentOptionText1.dataset.nextText = text1_options[i];
+
+        currentOptionText2.dataset.nextText = text2_options[i];
+
+        mainMenu.style.background = color_options[i];
+        carousel.classList.add("anim-next");
+
+        setTimeout(() => {
+          currentOptionImage.style.backgroundImage =
+            "url(" + image_options[i] + ")";
+        }, 455);
+
+        setTimeout(() => {
+          currentOptionText1.innerText = text1_options[i];
+          currentOptionText2.innerText = text2_options[i];
+          carousel.classList.remove("anim-next");
+        }, 650);
+      };
+
+      optionPrevious.onclick = function () {
+        if (i === 0) {
+          i = text1_options.length;
+        }
+        i = i - 1;
+        currentOptionText1.dataset.previousText = text1_options[i];
+
+        currentOptionText2.dataset.previousText = text2_options[i];
+
+        mainMenu.style.background = color_options[i];
+        carousel.classList.add("anim-previous");
+
+        setTimeout(() => {
+          currentOptionImage.style.backgroundImage =
+            "url(" + image_options[i] + ")";
+        }, 455);
+
+        setTimeout(() => {
+          currentOptionText1.innerText = text1_options[i];
+          currentOptionText2.innerText = text2_options[i];
+          carousel.classList.remove("anim-previous");
+        }, 650);
+      };
+    </script>
+  </body>
+</html>
